@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: nodejs-health-check-lmrm
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images-protected:IGY-g-nodejs-health-check-lmrm
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:01bc6821ec8ce1db1365f877e9256e11a887f7cc51e6d4a8bb065c557f58bdaa
         name: my-nodejs
         ports:
         - containerPort: 3001
