@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check-lmrm
+  namespace: e2e-demos-jpkt-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:01bc6821ec8ce1db1365f877e9256e11a887f7cc51e6d4a8bb065c557f58bdaa
+        name: my-nodejs
+        resources: {}
+status: {}
